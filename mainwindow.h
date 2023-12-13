@@ -5,7 +5,6 @@
 #include <QMessageBox>
 #include <QSqlTableModel>
 #include <QDebug>
-
 #include "addrecord.h"
 #include "editrecord.h"
 #include "helpinformation.h"
