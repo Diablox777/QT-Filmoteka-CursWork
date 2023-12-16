@@ -29,20 +29,23 @@ SOURCES += \
     addrecord.cpp \
     editrecord.cpp \
     helpinformation.cpp \
-    database.cpp
+    database.cpp \
+    tickets.cpp
 
 HEADERS += \
         mainwindow.h \
     addrecord.h \
     editrecord.h \
     helpinformation.h \
-    database.h
+    database.h \
+    tickets.h
 
 FORMS += \
         mainwindow.ui \
     addrecord.ui \
     editrecord.ui \
-    helpinformation.ui
+    helpinformation.ui \
+    tickets.ui
 
 RESOURCES += \
     resources/resources.qrc

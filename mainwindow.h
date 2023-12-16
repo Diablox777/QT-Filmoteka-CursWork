@@ -9,6 +9,7 @@
 #include "editrecord.h"
 #include "helpinformation.h"
 #include "database.h"
+#include "tickets.h"
 
 
 // Пространство имен Ui содержит класс, созданный в Qt Designer для главного окна
@@ -46,9 +47,13 @@ private slots:
     // Слот для обработки нажатия на запись в таблице
     void on_tableView_clicked(const QModelIndex &index);
 
+    void on_ticketsButton_clicked();
+
 private:
     // Указатель на объект интерфейса Ui::MainWindow
     Ui::MainWindow *ui;
+
+     Tickets *secondWindow;
 
     // Указатели на объекты форм добавления, редактирования и базы данных
     AddRecord *addForm;

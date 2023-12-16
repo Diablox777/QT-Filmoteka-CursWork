@@ -9,6 +9,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    // Инициализируем 2-е окно
+    secondWindow = new Tickets();
+    // подключаем к слоту запуска главного окна по кнопке во втором окне
+    connect(secondWindow, &Tickets::firstWindow, this, &MainWindow::show);
+
     // Устанавливаем фиксированный размер окна
     this->setMaximumSize(this->width(), this->height());
     this->setMinimumSize(this->width(), this->height());
@@ -194,4 +199,10 @@ void MainWindow::on_tableView_clicked(const QModelIndex &index)
     ui->delButton->setEnabled(true);
     currID = model->data(model->index(index.row(), 0)).toInt();
     currRow = index.row();
+}
+
+void MainWindow::on_ticketsButton_clicked()
+{
+    secondWindow->show();  // Показываем окно
+    this->close();    // Закрываем основное окно
 }

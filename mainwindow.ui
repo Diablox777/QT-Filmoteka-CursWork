@@ -94,6 +94,18 @@
        </property>
       </widget>
      </item>
+     <item>
+      <widget class="QPushButton" name="ticketsButton">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>
+Билеты
+</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="horizontalLayoutWidget">
