@@ -2,6 +2,7 @@
 Здесь не стоит особо оценивать функционал и дизайн.
 
 Отчет о проекте находится в папке "ScreenShots"
+
 ---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---.---
 
 Comrades, this project was created taking into account the conditions of the course work on visual programming in the 3rd year of the university. 
